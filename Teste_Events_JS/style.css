@@ -13,8 +13,8 @@ header {
 #logo{
     align-items: initial;
     float: left;
-    max-width:200px;
-    max-height:150px;
+    max-width:50px;
+    max-height:25px;
     width: auto;
     height: auto;
 }
