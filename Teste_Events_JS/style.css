@@ -1,6 +1,8 @@
 header {
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5ljdIPVD7VSaX27Rc3TAUf4_gW4mfOg7rmg&usqp=CAU');
     padding: 2px;
+    border: 0px;
+    margin: 0px;
 }
 #title{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -16,4 +18,9 @@ header {
     width: auto;
     height: auto;
 }
-
+body{
+    background-color:#204c8d;
+}
+.titulo{
+    
+}
