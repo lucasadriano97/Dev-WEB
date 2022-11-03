@@ -57,15 +57,14 @@ body {
 }
 
 #Forms {
+    color: white;
     border: dotted white;
 }
 
 table {
     border-spacing: 7px;
-    border: solid white;
-    border-radius: 10%;
 }
 
-.inputtext {
-    width: 200px;
+.InputText {
+    width: 150px;
 }
