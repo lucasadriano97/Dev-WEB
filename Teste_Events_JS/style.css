@@ -22,10 +22,10 @@ header {
 }
 
 h2 {
+    text-align: center;
     color: antiquewhite;
     padding-top: 25px;
     padding-bottom: 0px;
-    padding-left: 4cm;
 }
 
 body {
@@ -48,9 +48,24 @@ body {
 .content {
     box-sizing: content-box;
     flex-direction: column;
+    padding: 0px 2cm;
 }
 
 .Bloco {
-    box-sizing: content-box;
+    display: flex;
     flex-direction: row;
+}
+
+#Forms {
+    border: dotted white;
+}
+
+table {
+    border-spacing: 7px;
+    border: solid white;
+    border-radius: 10%;
+}
+
+.inputtext {
+    width: 200px;
 }

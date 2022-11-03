@@ -17,28 +17,58 @@
     </header>
 
     <div class="Bloco">
-        <div class="content" id="OnclickEvents">
 
+        <div class="content" id="OnclickEvents">
             <p class="titulo">
-                <h2> Onclick Event </h2>
+                <h2>Onclick Event </h2>
             </p>
             <p id="Happy">
                 <img id="Button" alt="Click Buttom" src="https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Teste_Events_JS/Image/Click_Button.png" , onclick="touchRock();" TITLE="Deixar Feliz">
                 <img id="irock" class="irock" alt="Irock imagem" style="cursor:default" src="https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Projeto_IRock/Imagem/irock.png" />
             </p>
-
             <p id="Sad">
                 <img id="Button" alt="Click Buttom" src="https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Teste_Events_JS/Image/Click_Button.png" , onclick="touchRocksad();" TITLE="Deixar Triste">
                 <img id="irock2" class="irock" alt="Irock imagem" style="cursor:default" src="https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Projeto_IRock/Imagem/irock.png" />
-
-
             </p>
             <p id="Reset">
                 <img id="Button" class="irock" alt="Click Buttom" src="https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Teste_Events_JS/Image/Click_Button.png" , onclick="touchRockreset();" TITLE="Reset">
             </p>
-
-
         </div>
+
+        <div class="content" id="Forms">
+            <div class="form">
+
+                <p class="titulo">
+                    <h2 style="text-align: center;"> Formulário </h2>
+                </p>
+
+                <div class="Formulario">
+                    <table>
+                        <tr>
+                            <td> Nome:</td>
+                            <td><input id="nome" class="InputText"></td>
+                        </tr>
+                        <tr>
+                            <td>Data de Nascimento:</td>
+                            <td><input type="date" class="InputText" id="nascimento:"></td>
+                        </tr>
+                        <tr>
+                            <form>
+                                <td>Sexo: </td>
+                                <td>
+                                    <input type="radio" name="sexo" Value="Masculino">
+                                    <label for="Masculino">Masculino</label><br>
+                                    <input type="radio" name="sexo" Value="Feminino">
+                                    <label for="Feminino">Feminino</label><br>
+                                </td>
+                            </form>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 </body>
 
