@@ -21,15 +21,15 @@ header {
     height: auto;
 }
 
-body {
-    background-color: #204c8d;
-}
-
-.titulo {
-    color: aliceblue;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+h2 {
+    color: antiquewhite;
     padding-top: 25px;
     padding-bottom: 0px;
+    padding-left: 4cm;
+}
+
+body {
+    background-color: #204c8d;
 }
 
 #Button {
@@ -45,12 +45,12 @@ body {
     padding-left: 150px;
 }
 
-.bloco {
+.content {
     box-sizing: content-box;
     flex-direction: column;
-    display: flex;
 }
 
-p {
-    flex-direction: column;
+.Bloco {
+    box-sizing: content-box;
+    flex-direction: row;
 }
