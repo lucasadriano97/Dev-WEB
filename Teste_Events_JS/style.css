@@ -46,6 +46,11 @@ body {
 }
 
 .bloco {
+    box-sizing: content-box;
+    flex-direction: column;
     display: flex;
+}
+
+p {
     flex-direction: column;
 }
