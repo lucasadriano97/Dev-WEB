@@ -14,7 +14,14 @@ function touchRockreset() {
 
 }
 
-function ReturForm() {
-    var UserName = document.getElementById("nome").value;
-    var userBirth = document.getElementById("date").value;
+function ReturFormIMC() {
+    var userName = document.getElementById("nome").value;
+    var userBith = document.getElementById("birth").value;
+    var userSex = document.getElementsByClassName("sex");
+    var userHeight = parseInt(document.getElementById("height").value);
+    var userWeight = parseFloat(getElementById("weight").value);
+
+    if (userName) {
+        alert("Olá" + userName + "!");
+    }
 }
