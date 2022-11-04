@@ -23,7 +23,8 @@ function ReturnFormIMC() {
     var IMC = (userHeight * userHeight * 0.1) / userWeight;
 
     if (userName) {
-        alert("Olá " + userName + "! Seu IMC é de aproximadamente " + IMC.toFixed(2));
+        console.log("Olá " + userName + "! Seu IMC é de aproximadamente " + IMC.toFixed(2));
+        document.getElementById("Resultado ").innerHTML = "Olá " + userName + "! Seu IMC é de aproximadamente " + IMC.toFixed(2);
     }
 
 
