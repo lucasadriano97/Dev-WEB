@@ -14,14 +14,17 @@ function touchRockreset() {
 
 }
 
-function ReturFormIMC() {
+function ReturnFormIMC() {
     var userName = document.getElementById("nome").value;
     var userBith = document.getElementById("birth").value;
     var userSex = document.getElementsByClassName("sex");
     var userHeight = parseInt(document.getElementById("height").value);
-    var userWeight = parseFloat(getElementById("weight").value);
+    var userWeight = parseFloat(document.getElementById("weight").value);
+    var IMC = (userHeight * userHeight * 0.1) / userWeight;
 
     if (userName) {
-        alert("Olá" + userName + "!");
+        alert("Olá " + userName + "! Seu IMC é de aproximadamente " + IMC.toFixed(2));
     }
+
+
 }
