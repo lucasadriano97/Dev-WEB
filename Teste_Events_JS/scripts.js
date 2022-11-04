@@ -15,8 +15,6 @@ function touchRockreset() {
 }
 
 function ReturForm() {
-    var UserName;
-    var userBirth = documet.getElementById("nascimento");
-    var Sex;
-
+    var UserName = document.getElementById("nome").value;
+    var userBirth = document.getElementById("date").value;
 }
