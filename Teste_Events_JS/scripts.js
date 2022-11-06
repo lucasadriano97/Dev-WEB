@@ -32,7 +32,8 @@ function ReturnFormIMC() {
 
     else if (document.getElementById("weight").value == "" ||
     isNaN(document.getElementById("weight").value)){
-    document.getElementById("Resultado").innerHTML ="<p class='error'>Verifique o campo Peso</p>";}
+    document.getElementById("Resultado").innerHTML ="<p class='error'>Verifique o campo Peso.</p>";
+    alert("Em caso de casa decimal, use o PONTO invés de VÍRGULA")}
 
 // Caso estiver certo, o resultado é exibido:
     else {
