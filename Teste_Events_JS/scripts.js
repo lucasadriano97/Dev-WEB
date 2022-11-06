@@ -18,10 +18,11 @@ function ReturnFormIMC() {
     var userName = document.getElementById("nome").value;
     var userBith = document.getElementById("birth").value;
     var userSex = document.getElementsByClassName("sex");
-    var userHeight = parseInt(document.getElementById("height").value);
+    var userHeight = parseFloat(document.getElementById("height").value) / 100;
     var userWeight = parseFloat(document.getElementById("weight").value);
-    var IMC = (userHeight * userHeight * 0.1) / userWeight;
+    var IMC = userWeight / (userHeight * userHeight);
 
+//  Validação dos campos digitados:
     if (document.getElementById("nome").value == ""){
     document.getElementById("Resultado").innerHTML ="Digite seu Nome Completo"}
     
@@ -32,7 +33,8 @@ function ReturnFormIMC() {
     else if (document.getElementById("weight").value == "" ||
     isNaN(document.getElementById("weight").value)){
     document.getElementById("Resultado").innerHTML ="Verifique o campo Peso";}
-   
+
+// Caso estiver certo, o resultado é exibido:
     else {
         console.log("Olá " + userName + "! Seu IMC é de aproximadamente " + IMC.toFixed(2));
         document.getElementById("Resultado").innerHTML = "Olá " + userName + "! Seu IMC é de aproximadamente " + IMC.toFixed(2);
