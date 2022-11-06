@@ -24,15 +24,15 @@ function ReturnFormIMC() {
 
 //  Validação dos campos digitados:
     if (document.getElementById("nome").value == ""){
-    document.getElementById("Resultado").innerHTML ="Digite seu Nome Completo"}
+    document.getElementById("Resultado").innerHTML ="<p class='error'>Digite seu Nome Completo</p>";}
     
     else if (document.getElementById("height").value == "" ||
     isNaN(document.getElementById("height").value)){
-    document.getElementById("Resultado").innerHTML ="Verifique o campo Altura";}
+    document.getElementById("Resultado").innerHTML ="<p class='error'>Verifique o campo Altura</p>";}
 
     else if (document.getElementById("weight").value == "" ||
     isNaN(document.getElementById("weight").value)){
-    document.getElementById("Resultado").innerHTML ="Verifique o campo Peso";}
+    document.getElementById("Resultado").innerHTML ="<p class='error'>Verifique o campo Peso</p>";}
 
 // Caso estiver certo, o resultado é exibido:
     else {
