@@ -46,15 +46,15 @@
 
                 <div class="Formulario">
                     <table>
-                        <tr>
+                        <tr name="CampoNome">
                             <td> Nome:</td>
                             <td><input id="nome" name="nome" class="InputText" ></td>
                         </tr>
-                        <tr>
+                        <tr name="DataDeNascimento">
                             <td>Data de Nascimento:</td>
                             <td><input type="date" class="InputText" id="birth"></td>
                         </tr>
-                        <tr>
+                        <tr name="CampoSexo">
                             <form class="sex">
                                 <td>Sexo: </td>
                                 <td>
@@ -65,16 +65,16 @@
                                 </td>
                             </form>
                         </tr>
-                        <tr>
+                        <tr name="CampoAltura">
                             <td>Altura em Cm:</td>
                             <td><input type="number" class="InputText" id="height"></td>
                         </tr>
-                        <tr>
+                        <tr name="CampoPeso">
                             <td>Peso em Kg:</td>
                             <td><input class="InputText" id="weight"></td>
                         </tr>
                     </table>
-                    <p id="send">
+                    <p name="BotaoEnviar" id="send">
                         <img id="Button" style="align-items: center; padding-left: 35%; padding-bottom: 5px; width: 100px;" alt="Click Buttom" src="https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Teste_Events_JS/Image/Click_Button.png" ; "
                             TITLE="Send ", onclick="ReturnFormIMC(); ">
 
