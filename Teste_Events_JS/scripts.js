@@ -22,9 +22,20 @@ function ReturnFormIMC() {
     var userWeight = parseFloat(document.getElementById("weight").value);
     var IMC = (userHeight * userHeight * 0.1) / userWeight;
 
-    if (userName) {
+    if (document.getElementById("nome").value == ""){
+    document.getElementById("Resultado").innerHTML ="Digite seu Nome Completo"}
+    
+    else if (document.getElementById("height").value == "" ||
+    isNaN(document.getElementById("height").value)){
+    document.getElementById("Resultado").innerHTML ="Verifique o campo Altura";}
+
+    else if (document.getElementById("weight").value == "" ||
+    isNaN(document.getElementById("weight").value)){
+    document.getElementById("Resultado").innerHTML ="Verifique o campo Peso";}
+   
+    else {
         console.log("Olá " + userName + "! Seu IMC é de aproximadamente " + IMC.toFixed(2));
-        document.getElementById("Resultado ").innerHTML = "Olá " + userName + "! Seu IMC é de aproximadamente " + IMC.toFixed(2);
+        document.getElementById("Resultado").innerHTML = "Olá " + userName + "! Seu IMC é de aproximadamente " + IMC.toFixed(2);
     }
 
 
