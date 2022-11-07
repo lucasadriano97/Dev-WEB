@@ -5,9 +5,7 @@ function setCookie(name, value, days) {
         date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
         validade = "; expires=" + date.toUTCString();
     }
-
-    console.log(name + "=" + (value || "") + validade);
-    document.cookie = name + "=" + (value || "") + validade;
+    document.cookie = name + "=" + (valor || "") + validade + "; path=/";
 }
 
 function getCookie(name) {
@@ -18,10 +16,7 @@ function getCookie(name) {
         console.log(i);
         var c = cookies[i];
         if (c.charAt(0) == '') c = c.substring(i, c.length);
-        console.log(cookies[i]);
-        console.log(c.charAt(0));
         if (c.indexOf(nameCookie) == 0) return c.substring(nameCookie.length, c.lenght);
-
     }
     return null;
 }
