@@ -3,6 +3,7 @@ function touchRock() {
     if (userName) {
         alert("Prazer em conhecê-lo " + userName + "!");
         document.getElementById("iRock").src = "https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Projeto_IRock/Imagem/irock_happy.png";
+        setTimeout("document.getElementById('iRock').src = 'https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Projeto_IRock/Imagem/irock.png'", 5000);
     }
 
 }
