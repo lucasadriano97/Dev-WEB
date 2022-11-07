@@ -1,11 +1,13 @@
-function setCookie(name, value, date) {
+function setCookie(name, value, days) {
     var validade = "";
     if (days) {
         var date = new Date();
         date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
         validade = "; expires=" + date.toUTCString();
     }
-    document.cookie = name + "=" + (valor || "") + validade + "; path=/";
+
+    console.log(name + "=" + (value || "") + validade);
+    document.cookie = name + "=" + (value || "") + validade;
 }
 
 function getCookie(name) {
@@ -13,9 +15,13 @@ function getCookie(name) {
     var nameCookie = name + "=";
     var cookies = document.cookie.split(';');
     for (var i = 0; i < cookies.length; i++) {
+        console.log(i);
         var c = cookies[i];
-        while (c.chartAt(0) == '') c = c.substring(l, c.length);
+        if (c.charAt(0) == '') c = c.substring(i, c.length);
+        console.log(cookies[i]);
+        console.log(c.charAt(0));
         if (c.indexOf(nameCookie) == 0) return c.substring(nameCookie.length, c.lenght);
+
     }
     return null;
 }
