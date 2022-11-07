@@ -75,9 +75,16 @@ table {
 .InputText {
     width: 150px;
 }
+<<<<<<< HEAD
 
 .error {
     color: red;
     text-align: center;
     font-size: x-large;
+=======
+.error{
+    color: red;
+    text-align: center;
+    font-size:x-large;
+>>>>>>> ce4bba494fccfb6eb736046565039cd4753e3c95
 }
