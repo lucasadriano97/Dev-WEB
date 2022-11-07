@@ -7,3 +7,7 @@ function touchRock() {
     }
 
 }
+
+function resizeRock() {
+    document.getElementById("iRock").style.height = (document.body.clientHeight - 100) * 0.9;
+}
