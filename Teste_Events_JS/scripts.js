@@ -1,4 +1,4 @@
-function setCookie(name, value, days) {
+/*function setCookie(name, value, days) {
     var validade = "";
     if (days) {
         var date = new Date();
@@ -22,16 +22,16 @@ function getCookie(name) {
 
 function eraseCookie(name) {
     document.cookie = name + '=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-}
+}*/
 
 
 function Hello() {
-    userName = getCookie("test_username");
+    /*userName = getCookie("test_username");
     if (userName) {
         alert("Bem-vindo de volta " + userName + "!");
-    } else {
-        alert("Bem-vindo ao meu Menu de Testes em Javascript!");
-    }
+    } else {*/
+    alert("Bem-vindo ao meu Menu de Testes em Javascript!");
+    //}
 }
 
 function touchRock() {
@@ -52,7 +52,7 @@ function touchRockreset() {
 
 function ReturnFormIMC() {
     var userName = document.getElementById("nome").value;
-    setCookie("test_username", userName, 5 * 365);
+    //setCookie("test_username", userName, 5 * 365);
 
     var userBith = document.getElementById("birth").value;
     var userSex = document.getElementsByClassName("sex");
@@ -62,21 +62,20 @@ function ReturnFormIMC() {
 
     //  Validação dos campos digitados:
     if (document.getElementById("nome").value == "") {
-        document.getElementById("Resultado").innerHTML = "<p class='error'>Digite seu Nome Completo</p>";
+        document.getElementById("Resultado ").innerHTML = "<p class='error'>Digite seu Nome Completo</p>";
     } else if (document.getElementById("height").value == "" ||
         isNaN(document.getElementById("height").value)) {
-        document.getElementById("Resultado").innerHTML = "<p class='error'>Verifique o campo Altura</p>";
+        document.getElementById("Resultado ").innerHTML = "<p class='error'>Verifique o campo Altura</p>";
     } else if (document.getElementById("weight").value == "" ||
         isNaN(document.getElementById("weight").value)) {
-        document.getElementById("Resultado").innerHTML = "<p class='error'>Verifique o campo Peso.</p>";
+        document.getElementById("Resultado ").innerHTML = "<p class='error'>Verifique o campo Peso.</p>";
         alert("Em caso de casa decimal, use o PONTO invés de VÍRGULA")
     }
 
     // Caso estiver certo, o resultado é exibido:
     else {
         console.log("Olá " + userName + "! Seu IMC é de aproximadamente " + IMC.toFixed(2));
-        document.getElementById("Resultado").innerHTML = "Olá " + userName + "! Seu IMC é de aproximadamente " + IMC.toFixed(2);
+        document.getElementById("Resultado ").innerHTML = "Olá " + userName + "! Seu IMC é de aproximadamente " + IMC.toFixed(2);
+
     }
-
-
 }
