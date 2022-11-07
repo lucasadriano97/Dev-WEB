@@ -1,4 +1,4 @@
-function setCookie(name, value, date) {
+function setCookie(name, value, days) {
     var validade = "";
     if (days) {
         var date = new Date();
