@@ -5,7 +5,7 @@ function setCookie(name, value, days) {
         date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
         validade = "; expires=" + date.toUTCString();
     }
-    document.cookie = name + "=" + (valor || "") + validade + "; path=/";
+    document.cookie = name + "=" + (value || "") + validade + "; path=/";
 }
 
 function getCookie(name) {
