@@ -62,11 +62,11 @@ function ReturnFormIMC() {
 
     //  Validação dos campos digitados:
     if (document.getElementById("nome").value == "") {
-        document.getElementById("Resultado ").innerHTML = "<p class='error'>Digite seu Nome Completo</p>";
+        document.getElementById("Resultado ").innerHTML = "<p class='erro'>Digite seu Nome Completo</p>";
     } else if (document.getElementById("height").value == "" || isNaN(document.getElementById("height").value)) {
-        document.getElementById("Resultado ").innerHTML = "<p class='error'>Verifique o campo Altura</p>";
+        document.getElementById("Resultado ").innerHTML = "<p class='erro'>Verifique o campo Altura</p>";
     } else if (document.getElementById("weight").value == "" || isNaN(document.getElementById("weight").value)) {
-        document.getElementById("Resultado ").innerHTML = "<p class='error'>Verifique o campo Peso.</p>";
+        document.getElementById("Resultado ").innerHTML = "<p class='erro'>Verifique o campo Peso.</p>";
         alert("Em caso de casa decimal, use o PONTO invés de VÍRGULA")
     }
 
