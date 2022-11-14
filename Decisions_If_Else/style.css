@@ -40,7 +40,7 @@ header {
     background-color: #c0c0c0;
     align-items: center;
     text-align: center;
-    border: 3px solid white;
+    border: 3px solid BLACK;
     height: 300px;
     width: auto;
     margin: auto;
@@ -50,4 +50,8 @@ header {
 #SessaoPergunta {
     border-bottom: 3px dotted white;
     opacity: 100%;
+}
+
+#Pergunta {
+    padding: 1cm;
 }

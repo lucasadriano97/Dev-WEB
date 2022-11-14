@@ -1,5 +1,5 @@
 function Hello() {
-    alert("Olá, eu sou o iRock!");
+    alert("Olá, eu sou o iRock!\n\nPara começar, clique em mim");
 }
 
 
@@ -8,10 +8,9 @@ function touchRock() {
     userName = prompt("Digite seu nome:");
     if (userName) {
 
-        alert("Olá " + userName + "!");
-        alert("Está preparado?");
+        alert("Olá " + userName + "!\n\nEstá preparado?");
     }
-
+    mostrarTabela()
     document.getElementById("iRock").src = "https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Projeto_IRock/Imagem/irock_happy.png";
     setTimeout("document.getElementById('iRock').src = 'https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Projeto_IRock/Imagem/irock.png'", 5000);
 }

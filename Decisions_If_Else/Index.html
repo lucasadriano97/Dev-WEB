@@ -26,10 +26,21 @@
     <br>
 
     <div name="questoes" class="questoes">
-        <table id="questionario">
+
+        <table id="questionario" style="display: none;">
+            <!-- "Display: none" faz com que permaneça escondida mesmo que ainda existente -->
+
+            <script>
+                function mostrarTabela() {
+                    document.getElementById('questionario').style.display = '';
+                }
+            </script>
+            <!-- //  Muda o style de display:none para vazio, voltando a exibir a tabela -->
+
+
             <tr id="SessaoPergunta">
-                <td id="NumeroPergunta" style="opacity: 1000%;">Questão 1</td>
-                <td id="Pergunta">Pergunta 1</td>
+                <td id="NumeroPergunta"></td>
+                <td id="Pergunta"></td>
             </tr>
             <tr>
                 <td>
