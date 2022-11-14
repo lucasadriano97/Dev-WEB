@@ -8,7 +8,7 @@ function touchRock() {
     userName = prompt("Digite seu nome:");
     if (userName) {
 
-        alert("Olá" + userName + "!");
+        alert("Olá " + userName + "!");
         alert("Está preparado?");
     }
 
@@ -19,6 +19,6 @@ function touchRock() {
 
 
 function resizeRock() {
-    document.getElementById("iRock").style.height = (document.body.clientHeight - 100) * 0.6 + "px";
+    document.getElementById("iRock").style.height = (document.body.clientHeight - 100) * 0.4 + "px";
     console.log();
 }
