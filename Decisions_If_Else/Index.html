@@ -27,21 +27,21 @@
 
     <div name="questoes" class="questoes">
 
-        <table id="materia" style="display: none;" class="questionario" onload="mostrarTabelaTemas();">
+        <table id="TabelaMateria" style="display: none;" class="questionario" onload="mostrarTabelaTemas();">
             <!-- "Display: none" faz com que permaneça escondida mesmo que ainda existente -->
 
 
-            <tr id="SessaoPergunta">
+            <tr id="SessaoMateria">
                 <td id="Tema" colspan="2" style="text-align: center; font-size:x-large;"></td>
             </tr>
 
-            <tr id="Pergunta">
-                <td id="Pergunta" colspan="2"></td>
+            <tr id="Materia">
+                <td colspan="2"></td>
             </tr>
 
             <tr>
                 <td>
-                    <img id="mat" style="margin-left: 2cm; margin-right: 2cm;" " class="buttom " src="C:\Users\lucas.couto\Documents\Projects\Dev-WEB\Decisions_If_Else\Imagens\questao.png " onclick="selacaoMateria(); ">
+                    <img id="mat" style="margin-left: 2cm; margin-right: 2cm;" " class="buttom " src="C:\Users\lucas.couto\Documents\Projects\Dev-WEB\Decisions_If_Else\Imagens\questao.png " onclick="selacaoMateria(); matematica(); ">
                      <br>Matematica</td>
                 <td><img id="pt " style="margin-right: 2cm; margin-left: 2cm; " class="buttom " src="C:\Users\lucas.couto\Documents\Projects\Dev-WEB\Decisions_If_Else\Imagens\questao.png "onclick="selacaoMateria(); "><br>Portugues</td>
                
@@ -54,28 +54,20 @@
             </tr>
         </table>
 
-        <table class="questionario " id="questionario" style="display: none; ">
+        <table class="questionario" id="questionario" style="display: none; ">
             <!-- "Display: none " faz com que permaneça escondida mesmo que ainda existente -->
 
-            <script>
-                function mostrarTabelaPergunta() {
-                    document.getElementById('questionario').style.display = '';
-                }
-            </script>
-            <!-- //  Muda o style de display:none para vazio, voltando a exibir a tabela -->
-
-
             <tr id="SessaoPergunta ">
-                <td id="NumeroPergunta " colspan="2 " style="text-align: center; "></td>
+                <td id="NumeroPergunta" colspan="2 " style="text-align: center;  font-size: x-large;"></td>
             </tr>
-            <tr id="Pergunta ">
-                <td id="Pergunta " colspan="2 "></td>
+            <tr id="BlocoPergunta">
+                <td id="Pergunta" colspan="2 "></td>
             </tr>
             <tr>
                 <td>
-                    <img style="margin-left: 2cm; margin-right: 2cm; " " class="buttom " src="C:\Users\lucas.couto\Documents\Projects\Dev-WEB\Decisions_If_Else\Imagens\botao_verde.png "> <br>Verdadeiro</td>
-                <td><img style="margin-right: 2cm; margin-left: 2cm; " class="buttom " src="C:\Users\lucas.couto\Documents\Projects\Dev-WEB\Decisions_If_Else\Imagens\botao_vermelho.png "><br> Falso</td>
-                </tr>
+                    <img id="verdadeiro" style="margin-left: 2cm; margin-right: 2cm; " onclick="resposta(true);" class="buttom " src="C:\Users\lucas.couto\Documents\Projects\Dev-WEB\Decisions_If_Else\Imagens\botao_verde.png "> <br>Verdadeiro</td>
+                <td><img id="falso " style="margin-right: 2cm; margin-left: 2cm; " class="buttom " onclick="resposta(false);" src="C:\Users\lucas.couto\Documents\Projects\Dev-WEB\Decisions_If_Else\Imagens\botao_vermelho.png "><br> Falso</td>
+            </tr>
         </table>
 
     </div>

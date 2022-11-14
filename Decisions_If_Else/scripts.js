@@ -1,14 +1,15 @@
+var Resposta = false;
+
 function Hello() {
     alert("Olá, eu sou o iRock!\n\nPara começar, clique em mim");
 }
-
 
 function touchRock() {
 
     userName = prompt("Digite seu nome:");
     if (userName) {
 
-        alert("Olá " + userName + "!\n\nEstá preparado?");
+        alert("Olá, " + userName + "!\n\nEstá preparado?");
     }
     mostrarTabelaTemas();
     document.getElementById("iRock").src = "https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Projeto_IRock/Imagem/irock_happy.png";
@@ -16,24 +17,33 @@ function touchRock() {
 }
 
 function mostrarTabelaTemas() {
-    document.getElementById('materia').style.display = '';
+    document.getElementById('TabelaMateria').style.display = '';
     document.getElementById('questionario').style.display = 'none';
     document.getElementById('Tema').innerText = userName + ", selecione um Tema:"
 }
 
 function selacaoMateria() {
-    document.getElementById('materia').style.display = 'none';
+    document.getElementById('TabelaMateria').style.display = 'none';
     document.getElementById('questionario').style.display = '';
 
-}
-
-
-function mostrarPergunta() {
-    document.getElementById("NumeroPergunta").innerHTML = "Questão 1";
-
 
 }
 
+
+function resposta(r) {
+    Resposta = r
+}
+
+
+
+
+function matematica() {
+
+    document.getElementById('NumeroPergunta').innerText = "Questão 1";
+    document.getElementById('Pergunta').innerHTML = "A soma dos quadrados dos catetos de um triângulo é igual ao quadrado de sua hipotenusa.";
+
+
+}
 
 
 function resizeRock() {
