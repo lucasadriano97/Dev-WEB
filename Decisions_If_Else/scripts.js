@@ -1,4 +1,6 @@
 var Resposta = false;
+var Materia;
+var Questao = 1;
 
 function Hello() {
     alert("Olá, eu sou o iRock!\n\nPara começar, clique em mim");
@@ -12,8 +14,7 @@ function touchRock() {
         alert("Olá, " + userName + "!\n\nEstá preparado?");
     }
     mostrarTabelaTemas();
-    document.getElementById("iRock").src = "https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Projeto_IRock/Imagem/irock_happy.png";
-    setTimeout("document.getElementById('iRock').src = 'https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Projeto_IRock/Imagem/irock.png'", 5000);
+
 }
 
 function mostrarTabelaTemas() {
@@ -32,17 +33,40 @@ function selacaoMateria() {
 
 function resposta(r) {
     Resposta = r
+    console.log(r)
+
+    if (Materia = "Matematica", Questao = 1, r == true) {
+        alert("Parabéns!");
+        console.log(Questao, Materia)
+        document.getElementById("iRock").src = "https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Projeto_IRock/Imagem/irock_happy.png";
+        setTimeout("document.getElementById('iRock').src = 'https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Projeto_IRock/Imagem/irock.png'", 3000);
+        Questao = 2;
+    }
+    if (Materia = "Matematica", Questao = 1, r == false)
+        alert("Tente novamente");
+    document.getElementById("iRock").src = "https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Projeto_IRock/Imagem/irock_sad.png";
+    setTimeout("document.getElementById('iRock').src = 'https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Projeto_IRock/Imagem/irock.png'", 3000)
+    console.log(Questao, Materia)
 }
 
 
 
-
 function matematica() {
+    Materia = "Matematica";
+    Questao;
 
-    document.getElementById('NumeroPergunta').innerText = "Questão 1";
-    document.getElementById('Pergunta').innerHTML = "A soma dos quadrados dos catetos de um triângulo é igual ao quadrado de sua hipotenusa.";
-
-
+    if (Materia == "Matematica", Questao == 1) {
+        document.getElementById('NumeroPergunta').innerText = "Questão " + Questao;
+        document.getElementById('Pergunta').innerHTML = "A soma dos quadrados dos catetos de um triângulo é igual ao quadrado de sua hipotenusa.";
+        Questao = 2;
+        //Verdadeiro
+    }
+    if (Materia == "Matematica", Questao == 2) {
+        document.getElementById('NumeroPergunta').innerText = "Questão " + Questao;
+        document.getElementById('Pergunta').innerHTML = "O quadrado da hipotenusa é igual a diferença dos quadrados dos catetos.";
+        //Falso
+    }
+    console.log(Questao, Materia)
 }
 
 
