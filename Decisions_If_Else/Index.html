@@ -26,37 +26,35 @@
     <br>
 
     <div name="questoes" class="questoes">
-        <table id="materia" style="display: ;" class="questionario">
-            <!-- "Display: none" faz com que permaneça escondida mesmo que ainda existente -->
 
-            <script>
-                function mostrarTabelaTemas() {
-                    document.getElementById('questionario').style.display = '';
-                }
-            </script>
-            <!-- //  Muda o style de display:none para vazio, voltando a exibir a tabela -->
+        <table id="materia" style="display: none;" class="questionario" onload="mostrarTabelaTemas();">
+            <!-- "Display: none" faz com que permaneça escondida mesmo que ainda existente -->
 
 
             <tr id="SessaoPergunta">
-                <td id="Tema" colspan="2" style="text-align: center; font-size:x-large;">Selecione um Tema:</td>
+                <td id="Tema" colspan="2" style="text-align: center; font-size:x-large;"></td>
             </tr>
+
             <tr id="Pergunta">
                 <td id="Pergunta" colspan="2"></td>
             </tr>
+
             <tr>
                 <td>
-                    <img id="mat" style="margin-left: 2cm; margin-right: 2cm;" " class="buttom " src="C:\Users\lucas.couto\Documents\Projects\Dev-WEB\Decisions_If_Else\Imagens\questao.png "> <br>Matematica</td>
-                <td><img id="pt " style="margin-right: 2cm; margin-left: 2cm; " class="buttom " src="C:\Users\lucas.couto\Documents\Projects\Dev-WEB\Decisions_If_Else\Imagens\questao.png "><br>Portugues</td>
+                    <img id="mat" style="margin-left: 2cm; margin-right: 2cm;" " class="buttom " src="C:\Users\lucas.couto\Documents\Projects\Dev-WEB\Decisions_If_Else\Imagens\questao.png " onclick="selacaoMateria(); ">
+                     <br>Matematica</td>
+                <td><img id="pt " style="margin-right: 2cm; margin-left: 2cm; " class="buttom " src="C:\Users\lucas.couto\Documents\Projects\Dev-WEB\Decisions_If_Else\Imagens\questao.png "onclick="selacaoMateria(); "><br>Portugues</td>
                
-            </tr><
-                tr> <td>
-                    <img id="geo " style="margin-left: 2cm; margin-right: 2cm; " " class="buttom " src="C:\Users\lucas.couto\Documents\Projects\Dev-WEB\Decisions_If_Else\Imagens\questao.png "> <br>Geografia</td>
-                <td><img id="cie" style="margin-right: 2cm; margin-left: 2cm; " class="buttom " src="C:\Users\lucas.couto\Documents\Projects\Dev-WEB\Decisions_If_Else\Imagens\questao.png "><br>Ciência</td>
+            </tr>
+
+            <tr> <td>
+                    <img id="geo " style="margin-left: 2cm; margin-right: 2cm; " " class="buttom " src="C:\Users\lucas.couto\Documents\Projects\Dev-WEB\Decisions_If_Else\Imagens\questao.png " onclick="selacaoMateria();"> <br>Geografia</td>
+                <td><img id="cie" style="margin-right: 2cm; margin-left: 2cm; " class="buttom " src="C:\Users\lucas.couto\Documents\Projects\Dev-WEB\Decisions_If_Else\Imagens\questao.png " onclick="selacaoMateria();"><br>Ciência</td>
 
             </tr>
         </table>
 
-        <table class="questionario " id="questionario " style="display: none; ">
+        <table class="questionario " id="questionario" style="display: none; ">
             <!-- "Display: none " faz com que permaneça escondida mesmo que ainda existente -->
 
             <script>
@@ -77,7 +75,7 @@
                 <td>
                     <img style="margin-left: 2cm; margin-right: 2cm; " " class="buttom " src="C:\Users\lucas.couto\Documents\Projects\Dev-WEB\Decisions_If_Else\Imagens\botao_verde.png "> <br>Verdadeiro</td>
                 <td><img style="margin-right: 2cm; margin-left: 2cm; " class="buttom " src="C:\Users\lucas.couto\Documents\Projects\Dev-WEB\Decisions_If_Else\Imagens\botao_vermelho.png "><br> Falso</td>
-            </>
+                </tr>
         </table>
 
     </div>
