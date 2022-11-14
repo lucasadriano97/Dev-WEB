@@ -3,13 +3,39 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>IRock - A Pedra Interativa!</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="scripts.js">
+    </script>
 </head>
 
-<body>
+<body onload="Hello();resizeRock();" onresize="resizeRock();">
+    <img id="logo" alt="Lucky's Logo" src="https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Teste_Events_JS/Image/White_Logo.png">
+
+    <header>
+
+        <p>Quiz - iRock</p>
+    </header>
+
+    <div id="main">
+        <img id="iRock" alt="Irock imagem" style="cursor:pointer" src="https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Projeto_IRock/Imagem/irock.png" , onclick="touchRock();" , />
+    </div>
+    <div name="questoes" class="questoes">
+        <table>
+            <th id="pergunta"></th>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+    </div>
+
 
 </body>
+
+
 
 </html>
