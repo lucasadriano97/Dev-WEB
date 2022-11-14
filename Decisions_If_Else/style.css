@@ -35,7 +35,7 @@ header {
     margin: 5px 5px;
 }
 
-#questionario {
+.questionario {
     box-sizing: border-box;
     background-color: #c0c0c0;
     align-items: center;
@@ -49,7 +49,7 @@ header {
 
 #SessaoPergunta {
     border-bottom: 3px dotted white;
-    opacity: 100%;
+    text-align: center;
 }
 
 #Pergunta {
