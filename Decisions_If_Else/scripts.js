@@ -35,6 +35,7 @@ function selacaoMateria() {
 
 
 function resposta(r){
+    document.getElementById('ponto').style.display = '';
     Resposta = r
     console.log(r);
 
@@ -44,6 +45,7 @@ function resposta(r){
             setTimeout("document.getElementById('iRock').src = 'https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Projeto_IRock/Imagem/irock.png'", 4000);
             Questao ++;
             Ponto ++;
+            document.getElementById('ponto').innerText="Pontos =" + Ponto ;
             
         }
         if (Materia ==1, Questao == 1, r==false){
@@ -51,14 +53,13 @@ function resposta(r){
             document.getElementById("iRock").src = "https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Projeto_IRock/Imagem/irock_sad.png";
             setTimeout("document.getElementById('iRock').src = 'https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Projeto_IRock/Imagem/irock.png'", 4000)
             Questao --;
-            document.getElementById(ponto).innerText="Pontos = "+Ponto;
             }
          console.log(Materia,Questao) 
         }
 
 function matematica() {
     Materia = 1;
-    if (Materia == 1, Questao == 1) {
+    if (Materia == 1, Questao <= 1) {
         document.getElementById('NumeroPergunta').innerText = "Questão 1";
         document.getElementById('Pergunta').innerHTML = "A soma dos quadrados dos catetos de um triângulo é igual ao quadrado de sua hipotenusa.";
 
