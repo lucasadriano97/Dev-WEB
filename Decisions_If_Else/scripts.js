@@ -1,16 +1,13 @@
-var Resposta = false;
+var Resposta = 3;
 var Materia = 0;
 var Questao = 1;
 var Ponto =0;
-
 function Hello() {
     alert("Olá, eu sou o iRock!\n\nPara começar, clique em mim");
 }
 
-
-
 function touchRock() {
-    document.getElementById('clique').style.display = 'none';
+   
     userName = prompt("Digite seu nome:");
     if (userName) {
 
@@ -33,30 +30,53 @@ function selacaoMateria() {
 
 }
 
-
 function resposta(r){
-    document.getElementById('ponto').style.display = '';
-    Resposta = r
-    console.log(r);
+    document.getElementById('linhaplacar').style.display = '';
+    Resposta = r;
+    console.log(Materia,Questao,r);
 
-        if (Materia ==1, Questao == 1, r==true){
+        if (Materia ==1 && Questao == 1 && r==1){
             alert("Parabéns!");
             document.getElementById("iRock").src = "https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Projeto_IRock/Imagem/irock_happy.png";
             setTimeout("document.getElementById('iRock').src = 'https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Projeto_IRock/Imagem/irock.png'", 4000);
             Questao ++;
             Ponto ++;
             document.getElementById('ponto').innerText="Pontos =" + Ponto ;
+            console.log(Materia,Questao,r) ;
+            r=3;
             
         }
-        if (Materia ==1, Questao == 1, r==false){
+        if (Materia ==1 && Questao == 1 && r==2 ){
             alert("Tente novamente");
             document.getElementById("iRock").src = "https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Projeto_IRock/Imagem/irock_sad.png";
-            setTimeout("document.getElementById('iRock').src = 'https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Projeto_IRock/Imagem/irock.png'", 4000)
-            Questao --;
+            setTimeout("document.getElementById('iRock').src = 'https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Projeto_IRock/Imagem/irock.png'", 4000);
+            r=3;
             }
-         console.log(Materia,Questao) 
+            console.log(Materia,Questao,r) ;
+            
+
+            if (Materia ==1 && Questao == 2  && r==2 ){
+                alert("Parabéns!");
+                document.getElementById("iRock").src = "https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Projeto_IRock/Imagem/irock_happy.png";
+                setTimeout("document.getElementById('iRock').src = 'https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Projeto_IRock/Imagem/irock.png'", 4000);
+                Questao ++;
+                Ponto ++;
+                document.getElementById('ponto').innerText="Pontos =" + Ponto ;
+                r=3;
+                }
+                console.log(r,Materia,Questao) ;
+            if(Materia ==1 && Questao == 2  && r==1 ){
+                alert("Tente novamente");
+                document.getElementById("iRock").src = "https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Projeto_IRock/Imagem/irock_sad.png";
+                setTimeout("document.getElementById('iRock').src = 'https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Projeto_IRock/Imagem/irock.png'", 4000);
+                r=3;
+
+            }
+
+            
         }
 
+    
 function matematica() {
     Materia = 1;
     if (Materia == 1, Questao <= 1) {
@@ -69,11 +89,13 @@ function matematica() {
             document.getElementById('Pergunta').innerHTML = "O quadrado da hipotenusa é igual a diferença dos quadrados dos catetos.";
 
         }
-    }
+        if (Materia == 1, Questao == 3) {
+            document.getElementById('NumeroPergunta').innerText = "Questão " + Questao;
+            document.getElementById('Pergunta').innerHTML = "O quadrado da hipotenusa é igual a diferença dos quadrados dos catetos.";
 
+        }
+        
 
-    function resizeRock() {
-        document.getElementById("iRock").style.height = (document.body.clientHeight - 100) * 0.4 + "px";
-       
-    }
+}
+
 
