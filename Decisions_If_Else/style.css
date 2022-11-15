@@ -12,7 +12,8 @@ header {
     margin-left: 240px;
     margin-right: 240px;
     border-style: dotted;
-    border-radius: 12%;
+    border-radius: 20px;
+    
 }
 
 #main {

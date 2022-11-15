@@ -3,7 +3,7 @@ var Materia = 0;
 var Questao = 1;
 var Ponto =0;
 function Hello() {
-    alert("Olá, eu sou o iRock!\n\nPara começar, clique em mim");
+    alert("Olá, eu sou o iRock!\n\nBem-Vindo ao meu QUIZ!\n\nPara começar, clique em mim");
 }
 
 function touchRock() {
@@ -26,12 +26,12 @@ function mostrarTabelaTemas() {
 function selacaoMateria() {
     document.getElementById('TabelaMateria').style.display = 'none';
     document.getElementById('questionario').style.display = '';
+    document.getElementById('linhaplacar').style.display = '';
 
 
 }
 
 function resposta(r){
-    document.getElementById('linhaplacar').style.display = '';
     Resposta = r;
     console.log(Materia,Questao,r);
 
@@ -41,7 +41,7 @@ function resposta(r){
             setTimeout("document.getElementById('iRock').src = 'https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Projeto_IRock/Imagem/irock.png'", 4000);
             Questao ++;
             Ponto ++;
-            document.getElementById('ponto').innerText="Pontos =" + Ponto ;
+            document.getElementById('linhaplacar').innerText="Pontos =" + Ponto ;
             console.log(Materia,Questao,r) ;
             r=3;
             
@@ -76,7 +76,6 @@ function resposta(r){
             
         }
 
-    
 function matematica() {
     Materia = 1;
     if (Materia == 1, Questao <= 1) {
