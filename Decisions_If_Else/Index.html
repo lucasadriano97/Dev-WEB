@@ -47,12 +47,12 @@
                 <td>
                     <img id="mat" style="margin-left: 2cm; margin-right: 2cm;" " class="buttom " src="https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Decisions_If_Else/Imagens/questao.png" onclick="selacaoMateria(); matematica(); ">
                      <br>Matematica</td>
-                <td><img id="pt " style="margin-right: 2cm; margin-left: 2cm; " class="buttom " src="https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Decisions_If_Else/Imagens/questao.png"onclick="selacaoMateria(); "><br>Portugues</td>
+                <td><img id="pt " style="margin-right: 2cm; margin-left: 2cm; " class="buttom " src="https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Decisions_If_Else/Imagens/questao.png"onclick="selacaoMateria(); portugues() "><br>Portugues</td>
                
             </tr>
 
             <tr> <td>
-                    <img id="geo " style="margin-left: 2cm; margin-right: 2cm; " " class="buttom " src="https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Decisions_If_Else/Imagens/questao.png" onclick="selacaoMateria();"> <br>Geografia</td>
+                    <img id="geo " style="margin-left: 2cm; margin-right: 2cm; " " class="buttom " src="https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Decisions_If_Else/Imagens/questao.png" onclick="selacaoMateria();geografia()"> <br>Geografia</td>
                 <td><img id="cie" style="margin-right: 2cm; margin-left: 2cm; " class="buttom " src="https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Decisions_If_Else/Imagens/questao.png" onclick="selacaoMateria();"><br>Ciência</td>
 
             </tr>
@@ -67,11 +67,17 @@
             <tr id="BlocoPergunta">
                 <td id="Pergunta" colspan="2 "></td>
             </tr>
-            <tr>
+            <tr id="botao" syle="display: ;">
                 <td>
-                    <img id="verdadeiro" style="margin-left: 2cm; margin-right: 2cm; " onclick="resposta(1);matematica()" class="buttom " src="https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Decisions_If_Else/Imagens/botao_verde.png"> <br>Verdadeiro</td>
-                <td><img id="falso " style="margin-right: 2cm; margin-left: 2cm; " class="buttom " onclick="resposta(2);matematica()" src="https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Decisions_If_Else/Imagens/botao_vermelho.png"><br> Falso</td>
+                    <img id="verdadeiro" style="margin-left: 2cm; margin-right: 2cm; " onclick="resposta(1);matematica();portugues();geografia();" class="buttom " src="https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Decisions_If_Else/Imagens/botao_verde.png"> <br>Verdadeiro</td>
+                <td><img id="falso " style="margin-right: 2cm; margin-left: 2cm; " class="buttom " onclick="resposta(2);matematica();portugues();geografia();" src="https://raw.githubusercontent.com/lucasadriano97/Dev-WEB/main/Decisions_If_Else/Imagens/botao_vermelho.png"><br> Falso</td>
             </tr>
+            <tr id="botaoEnd">
+                <td colspan="2">
+                <img id="Home" style="margin-right: 2cm; margin-left: 2cm; display: none;" onclick="mostrarTabelaTemas(),Reset();" class="buttom " src="C:\Users\User\Documents\Projetos\Dev-WEB-1\Decisions_If_Else\Imagens\Home.png"><br></td>
+            </td>
+            </tr>
+
         </table>
 
     </div>
