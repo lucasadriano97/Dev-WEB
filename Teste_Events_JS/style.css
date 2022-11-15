@@ -64,8 +64,15 @@
         }
         
         #IMCCALC {
+            margin: auto;
+            padding: auto;
             color: white;
             border: dotted white;
+            align-items: center;
+            float: none;
+            position: relative;
+            flex-direction: column;
+            align-items: center;
         }
         
         table {
