@@ -10,10 +10,67 @@ header {
     text-decoration: aliceblue;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-shadow: aqua;
-    font-size: xx-large;
+    font-size: 35px;
+    font-weight: lighter;
     box-sizing: content-box;
     border-radius: 25px;
     padding: 5px;
     width: 500px;
     margin: auto;
+}
+
+#menuTitle {
+    align-items: top;
+    position: row;
+}
+
+#main {
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+#logo {
+    align-items: initial;
+    float: left;
+    max-width: auto;
+    max-height: 70px;
+    width: auto;
+    height: auto;
+}
+
+nav {
+    background-color: #232222;
+    margin-top: 2cm;
+    top: 5%;
+    margin-left: -1cm;
+    width: 15%;
+    min-height: 10cm;
+    max-height: max-content;
+    height: auto;
+    border-style: dotted;
+    border-color: white;
+    border-radius: 20px;
+    position: relative;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+}
+
+section {
+    width: 50%;
+    top: 5%;
+    left: 5%;
+    border-style: dotted;
+    border-color: white;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-top: 2cm;
+    margin-left: 1cm;
+    margin-top: 2cm;
+    margin-right: 1cm;
+    float: left;
+}
+
+#form {
+    padding: 0.5cm;
 }
