@@ -21,7 +21,6 @@ header {
 
 #menuTitle {
     align-items: top;
-    position: row;
 }
 
 #main {
@@ -41,25 +40,22 @@ header {
 nav {
     background-color: #232222;
     margin-top: 2cm;
-    top: 5%;
-    margin-left: -1cm;
-    width: 15%;
-    min-height: 10cm;
+    width: auto;
     max-height: max-content;
     height: auto;
     border-style: dotted;
     border-color: white;
     border-radius: 20px;
-    position: relative;
     box-sizing: border-box;
-    position: relative;
     float: left;
+    padding: 10px;
 }
 
 section {
-    width: 50%;
-    top: 5%;
-    left: 5%;
+    padding: 10px;
+    background-color: #232222;
+    width: 60%;
+    right: 5%;
     border-style: dotted;
     border-color: white;
     border-radius: 20px;
@@ -73,4 +69,8 @@ section {
 
 #form {
     padding: 0.5cm;
+}
+
+td {
+    padding: 10px;
 }
