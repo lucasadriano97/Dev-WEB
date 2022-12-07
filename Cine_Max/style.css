@@ -40,7 +40,7 @@ header {
 nav {
     background-color: #232222;
     margin-top: 2cm;
-    width: auto;
+    width: 260px;
     max-height: max-content;
     height: auto;
     border-style: dotted;
@@ -73,4 +73,10 @@ section {
 
 td {
     padding: 10px;
+}
+select {
+    width: 130px;
+    max-width: max-content;
+
+
 }
